@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Left Panel Example</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    .left-panel {
+      position: fixed;
+      top: 10;
+      left: 0;
+      width: 100px;
+      height: 30vh;
+      background-color: green;
+      padding: 15px;
+      
+    }
+    .left-panel a {
+      display: block;
+      margin-bottom: 30px;
+      color: #333;
+      text-decoration: none;
+    }
+    .content {
+      margin-left: 160px;
+      padding: 20px;
+    
+    }
+    #main{
+      text-align: center;
+    }
+    .main_home{
+       background-image:url('https://th.bing.com/th/id/R.acf9459087b0c9ea1d6546774ca7e7bd?rik=1Syte4JhoQDD9Q&riu=http%3a%2f%2fwallpapercave.com%2fwp%2frOUBsOw.png&ehk=wQ0ebfiU8bXIbD4Het3cQHPn8L1I%2fOD33XC1lu3durw%3d&risl=&pid=ImgRaw&r=0');
+       background-size: cover;
+    }
+    #text_one{
+      font-size: 50px;
+    }
+    
+    #text_two{
+      font-size:25px;
+    }
+    
+    
+    
+  </style>
+</head>
+<body>
+  <h1 id="main">Swachh Bharat Mission</h1>
+  <div class="left-panel">
+    <a href="#" onclick="showHome('home')">Home</a>
+    <a href="#" onclick="showContact('contact')">Contact</a>
+    <a href="#" onclick="showInformation('information')">Information</a>
+    <a href="#" onclick="showGuide('guide')">Guide</a>
+  </div>
+  <div class="main_home">
+  <div class="content" id="content">
+    <h1 id="text_one">Welcome to Swachh Bharat Abhiyan</h1>
+    <p id="text_two">To accelerate the efforts to achieve universal sanitation coverage and to put the focus on sanitation,
+      the Prime Minister of India had launched the Swachh Bharat Mission on 2nd October 2014. Under the mission,
+      all villages, Gram Panchayats, Districts, States and Union Territories in India declared themselves "open-defecation free" (ODF) by<b>2 October 2019, the 150th birth anniversary of Mahatma Gandhi</b>,
+      by constructing over 100 million toilets in rural India.To ensure that the open defecation free behaviours are sustained, no one is left behind, and that solid and liquid waste management facilities are accessible, the Mission is moving towards the next Phase II of SBMG i.e ODF-Plus.
+      ODF Plus activities under Phase II of Swachh Bharat Mission (Grameen) will reinforce ODF behaviours and focus on providing interventions for the safe management of solid and liquid waste in villages.<br>
+
+      The second phase of the mission aims to sustain the open defecation free status and improve the management of solid and liquid waste, while also working to improve the lives of sanitation workers.
+      The mission is aimed at progressing towards target 6.2 of the Sustainable Development Goals Number 6 established by the United Nations in 2015. By achieving the lowest open defecation-free status in 2019,
+      India achieved its Sustainable Development Goal (SDG) 6.2 health target in record time, eleven years ahead of the UN SDG target of 31 December 2030.<br>
+
+      The campaign's official name is in Hindi. In English, it translates to "Clean India Mission". The campaign was officially launched on 2 October 2014 at Rajghat,
+        New Delhi by Prime Minister Narendra Modi. It is India's largest cleanliness drive to date with three million government employees and students from all parts of India participating in 4,043 cities, towns, and rural communities.
+  </p>
+  </div>
+</div>
+
+
+  <script>
+    // JavaScript code for Home component
+    function showHome() {
+      document.getElementById("content").innerHTML = "<h1>Welcome to the Home Page</h1><br><p>Swachh Bharat Abhiyan, also known as the Clean India Mission, is a nationwide cleanliness campaign initiated by the Government of India. It aims to achieve the vision of a Clean India by ensuring proper sanitation and hygiene practices across the country.<br>While there is no formal process to join Swachh Bharat Abhiyan as an organization or group, you can actively participate and contribute to the mission in several ways:<br>Individual Efforts: As an individual, you can start by adopting cleanliness practices in your daily life. Maintain personal hygiene, dispose of waste properly, and encourage others to do the same.<br>Spread Awareness: Educate others about the importance of cleanliness, sanitation, and hygiene. Organize awareness campaigns in your locality, schools, colleges, or workplaces to promote cleanliness practices.<br>Community Participation: Organize or participate in cleanliness drives in your community. Mobilize people to clean public spaces, streets, parks, and other areas that require attention.<br>Volunteer with Existing Organizations: Many NGOs and local organizations actively participate in Swachh Bharat Abhiyan. You can volunteer your time and resources with these organizations to contribute to their initiatives.<br>Collaborate with Local Authorities: Engage with local municipal corporations or panchayats to understand their cleanliness programs and projects. Offer your support and collaboration.</p><br><img src='https://th.bing.com/th/id/OIP.bsAOhg-e4l3JrGXbAnUoFwHaHa?w=159&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7' alt=Swachh Bharat> ";
+    }
+
+    // JavaScript code for Contact component
+    function showContact() {
+      document.getElementById("content").innerHTML = "<h1>Contact Information</h1><p>Email: contact@example.com<br>Phone: 123-456-7890</p>";
+    }
+
+    // JavaScript code for Information component
+    function showInformation() {
+      document.getElementById("content").innerHTML = "<h1>Information</h1><p>The Swachh Bharat website is an online platform dedicated to the Swachh Bharat Abhiyan (Clean India Mission), which is a nationwide cleanliness campaign launched by the Government of India. The campaign was officially inaugurated on October 2, 2014, coinciding with Mahatma Gandhi's birth anniversary.The website serves as a comprehensive resource hub, providing information, updates, and resources related to the Swachh Bharat campaign. Here is some information about the website:<br>Objective:- The primary objective of the Swachh Bharat website is to create awareness about cleanliness, sanitation, and hygiene practices among the citizens of India.It aims to provide a platform for individuals, organizations, and communities to actively participate in the cleanliness drive and contribute to the mission's success.<br>Features and Sections:- The website consists of various sections that cover different aspects of the Swachh Bharat campaign.<br>The Swachh Bharat website aims to engage citizens, organizations, and stakeholders in creating a clean and hygienic India. It acts as a centralized platform for information dissemination, resource sharing, and collaboration towards achieving the goals of the Swachh Bharat Abhiyan.</p>";
+    }
+
+    // JavaScript code for Guide component
+    function showGuide() {
+      document.getElementById("content").innerHTML = "<h1>User Guide</h1><ul><li>The homepage is the starting point of the website. It provides an overview of the Swachh Bharat campaign and its objectives</li>.<li>The Contact page provides contact information for reaching out to the Swachh Bharat team.You may find phone numbers, email addresses, and a contact form to submit your queries, feedback, or suggestions.</li><li>Information page tells us the objective of this website</li></ul><p>Remember, the Swachh Bharat website is a platform for spreading awareness, promoting cleanliness, and engaging citizens in the campaign. Feel free to explore the various sections, participate in events, and utilize the resources available to contribute to the vision of a clean India.<br>Keep India clean. Join the Swachh Bharat movement today!</p>";
+    }
+  </script>
+
+</body>
+</html>
+
